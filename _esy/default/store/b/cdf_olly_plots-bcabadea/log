@@ -1,4 +1,4 @@
-# /home/sk/.esy/3______________________________________________________________________/i/opam__s__dune-opam__c__3.14.0-df69e958/bin/dune build --verbose
+# /home/sk/.esy/3______________________________________________________________________/i/opam__s__dune-opam__c__3.14.0-df69e958/bin/dune build
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /home/sk/.cache/dune/db
@@ -20,6 +20,4 @@
 #        }
 #  ; instrument_with = []
 #  }
-$ /home/sk/.esy/3______________________________________________________________________/i/ocaml-5.1.1-77f2dea3/bin/ocamlc.opt -config > /tmp/dune_2611c8_output
-# Actual targets:
-# - alias @@default
+$ /home/sk/.esy/3______________________________________________________________________/i/ocaml-5.1.1-77f2dea3/bin/ocamlc.opt -config > /tmp/dune_908b07_output

@@ -1,87 +1,47 @@
 open Minttea
+open Leaves
 
-(* Type definitions and initial model *)
+let init _ = Command.Noop
+
 type model = {
-  choices : (string * [ `selected | `unselected ]) list;
-  cursor : int;
+  gray_bar : Progress.t;
+  color_bar : Progress.t;
+  emoji_bar : Progress.t;
+  no_percentage_bar : Progress.t;
 }
 
 let initial_model =
+  let width = 50 in
   {
-    cursor = 0;
-    choices =
-      [
-        ("Buy empanadas 🥟", `unselected);
-        ("Buy carrots 🥕", `unselected);
-        ("Buy cupcakes 🧁", `unselected);
-      ];
+    gray_bar = Progress.make ~width ~color:(`Plain (Spices.color "#3fa2a3")) ();
+    color_bar =
+      Progress.make ~width
+        ~color:(`Gradient (Spices.color "#b14fff", Spices.color "#00ffa3"))
+        ();
+    emoji_bar =
+      Progress.make ~full_char:"⭐" ~trail_char:"🚀" ~width:25
+        ~color:(`Plain (Spices.color "#000000"))
+        ();
+    no_percentage_bar =
+      Progress.make ~width
+        ~color:(`Plain (Spices.color "#4776E6")) ();
   }
 
-let init _model = Command.Noop
-
-(* Update function with pattern matching for events *)
-let update event model =
+let update event m =
   match event with
-  | Event.KeyDown (Key "q" | Escape) -> (model, Command.Quit)
-  | Event.KeyDown (Up | Key "k") ->
-      let cursor =
-        if model.cursor = 0 then List.length model.choices - 1
-        else model.cursor - 1
-      in
-      ({ model with cursor }, Command.Noop)
-  | Event.KeyDown (Down | Key "j") ->
-      let cursor =
-        if model.cursor = List.length model.choices - 1 then 0
-        else model.cursor + 1
-      in
-      ({ model with cursor }, Command.Noop)
-  | Event.KeyDown (Enter | Space) ->
-      let toggle status =
-        match status with `selected -> `unselected | `unselected -> `selected
-      in
-      let choices =
-        List.mapi
-          (fun idx (name, status) ->
-            let status = if idx = model.cursor then toggle status else status in
-            (name, status))
-          model.choices
-      in
-      ({ model with choices }, Command.Noop)
-  | _ -> (model, Command.Noop)
+  | Event.KeyDown (Key "q" | Escape) -> (m, Command.Quit)
+  | Event.Frame _now ->
+      let gray_bar = Progress.increment m.gray_bar 0.001 in
+      let color_bar = Progress.increment m.color_bar (Random.float 0.0001) in
+      let emoji_bar = Progress.increment m.emoji_bar 0.00005 in
+      let no_percentage_bar = Progress.increment m.no_percentage_bar 0.00003 in
+      ({ gray_bar; color_bar; emoji_bar; no_percentage_bar }, Command.Noop)
+  | _ -> (m, Command.Noop)
 
-let view model =
-  let open Spices in
-  (* padding and margin using the Spices module *)
-  let checkbox_padded_style = default |> padding_left 1 |> padding_right 1 in
-  let list_margin_style = default |> margin_top 2 |> margin_bottom 2 in
+let view m =
+  Format.sprintf "\n\n%s\n\n%s\n\n%s\n\n%s\n\n" (Progress.view m.gray_bar)
+    (Progress.view m.color_bar)
+    (Progress.view m.emoji_bar)
+    (Progress.view m.no_percentage_bar)
 
-  (* apply the padding and margin styling *)
-  let apply_checkbox_style = build checkbox_padded_style in
-  let apply_list_style = build list_margin_style in
-
-  let options =
-    model.choices
-    |> List.mapi (fun idx (name, checked) ->
-           let cursor = if model.cursor = idx then ">" else " " in
-           let checked_symbol = if checked = `selected then "x" else " " in
-           let checkbox = apply_checkbox_style "[%s]" checked_symbol in
-           Format.sprintf "%s %s %s" cursor checkbox name)
-    |> String.concat "\n"
-  in
-  apply_list_style
-    {|
-What should we buy at the market?
-
-%s
-
-Press q to quit.
-    |}
-    options
-
-(* Application start *)
-let app = Minttea.app ~init ~update ~view ()
-let () = Minttea.start app ~initial_model
-
-(* let f x = Printf.printf "%s\n" x
-
-let () = f "shubham" *)
+let () = Minttea.app ~init ~update ~view () |> Minttea.start ~initial_model

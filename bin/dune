@@ -1,4 +1,4 @@
 (executable
  (name main)
  (public_name main)
- (libraries minttea spices runtime_events_tools))
+ (libraries minttea leaves spices eio eio_main))

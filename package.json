@@ -3,6 +3,7 @@
         "ocaml": "5.1.1",
         "@opam/minttea": "*",
         "@opam/spices": "*",
+        "@opam/leaves": "*",
         "@opam/eio": "*",
         "@opam/eio_main": "*",
         "@opam/runtime_events_tools": "0.5.1"

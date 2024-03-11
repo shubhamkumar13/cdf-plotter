@@ -77,18 +77,21 @@ export OLDPWD='/home/sk'
 export LANG='en_IN'
 export INVOCATION_ID='9356f3b722534465a9541b6f73f2c2b2'
 export MANDATORY_PATH='/usr/share/gconf/ubuntu-xorg.mandatory.path'
-export ATUIN_HISTORY_ID='018e2c9fe333738fb64abc8a4232eb7a'
+export ATUIN_HISTORY_ID='018e2cca92367c84946791636faaa22e'
 export OCAML_TOPLEVEL_PATH='/home/sk/.opam/4.14.0/lib/toplevel'
 export LS_COLORS=''
+export READLINE_MARK='0'
 export NIX_SSL_CERT_FILE='/etc/ssl/certs/ca-certificates.crt'
 export ALACRITTY_SOCKET='/run/user/1000/Alacritty-:0-4177.sock'
 export JUST_PATH='/home/sk/.just'
 export COLORTERM='truecolor'
 export NOTION_KEY='secret_vXMJwOaALn5qMW8gxCJj6HmL6GzmWeo09QLzWLoSdcN'
+export READLINE_LINE=''
 export XAUTHORITY='/run/user/1000/gdm/Xauthority'
 export DBUS_SESSION_BUS_ADDRESS='unix:path=/run/user/1000/bus'
 export LIGO_PATH='/usr/local/bin/ligo'
 export HISTCONTROL='ignoredups:'
+export READLINE_POINT='0'
 export STARSHIP_CONFIG='/home/.sk/.config/starship.toml'
 export DESKTOP_SESSION='ubuntu-xorg'
 export TELOXIDE_TOKEN='5592099432:AAEWTJ-YoZaOOOKCmC7TPkJPpQgzfGymUW4'
@@ -103,17 +106,17 @@ export ALACRITTY_WINDOW_ID='41943044'
 export SHELL='/bin/bash'
 export PATH="/home/sk/cdf-olly-plots/_esy/default/bin:$PATH"
 export cur__jobs="4"
-export cur__etc="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/etc"
-export cur__share="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/share"
-export cur__toplevel="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/toplevel"
-export cur__stublibs="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/stublibs"
-export cur__doc="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/doc"
-export cur__man="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/man"
-export cur__lib="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/lib"
-export cur__sbin="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/sbin"
-export cur__bin="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/bin"
-export cur__install="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea"
-export cur__target_dir="/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-bcabadea"
+export cur__etc="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/etc"
+export cur__share="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/share"
+export cur__toplevel="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/toplevel"
+export cur__stublibs="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/stublibs"
+export cur__doc="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/doc"
+export cur__man="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/man"
+export cur__lib="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/lib"
+export cur__sbin="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/sbin"
+export cur__bin="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/bin"
+export cur__install="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4"
+export cur__target_dir="/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-b6a6c0d4"
 export cur__original_root="/home/sk/cdf-olly-plots"
 export cur__root="/home/sk/cdf-olly-plots"
 export cur__dev="true"
@@ -1394,6 +1397,14 @@ export MAN_PATH="/home/sk/.esy/3________________________________________________
 export PATH="/home/sk/.esy/3______________________________________________________________________/i/opam__s__minttea-opam__c__0.0.2-80152075/bin:$PATH"
 
 #
+# @opam/leaves@opam:0.0.2@777768fe
+#
+export CAML_LD_LIBRARY_PATH="/home/sk/.esy/3______________________________________________________________________/i/opam__s__leaves-opam__c__0.0.2-0612ec12/stublibs:/home/sk/.esy/3______________________________________________________________________/i/opam__s__leaves-opam__c__0.0.2-0612ec12/lib/stublibs:$CAML_LD_LIBRARY_PATH"
+export OCAMLPATH="/home/sk/.esy/3______________________________________________________________________/i/opam__s__leaves-opam__c__0.0.2-0612ec12/lib:$OCAMLPATH"
+export MAN_PATH="/home/sk/.esy/3______________________________________________________________________/i/opam__s__leaves-opam__c__0.0.2-0612ec12/man:$MAN_PATH"
+export PATH="/home/sk/.esy/3______________________________________________________________________/i/opam__s__leaves-opam__c__0.0.2-0612ec12/bin:$PATH"
+
+#
 # @opam/eio_main@opam:0.15@b6e1694d
 #
 export CAML_LD_LIBRARY_PATH="/home/sk/.esy/3______________________________________________________________________/i/opam__s__eio__main-opam__c__0.15-008e4ed1/stublibs:/home/sk/.esy/3______________________________________________________________________/i/opam__s__eio__main-opam__c__0.15-008e4ed1/lib/stublibs:$CAML_LD_LIBRARY_PATH"
@@ -1429,8 +1440,8 @@ export PATH="/home/sk/.esy/3____________________________________________________
 # Built-in
 #
 export OCAMLFIND_LDCONF="ignore"
-export OCAMLFIND_DESTDIR="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-bcabadea/lib"
-export DUNE_BUILD_DIR="/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-bcabadea"
+export OCAMLFIND_DESTDIR="/home/sk/cdf-olly-plots/_esy/default/store/i/cdf_olly_plots-b6a6c0d4/lib"
+export DUNE_BUILD_DIR="/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-b6a6c0d4"
 export DUNE_STORE_ORIG_SOURCE_DIR="true"
 export SHELL="env -i /bin/bash --norc --noprofile"
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"

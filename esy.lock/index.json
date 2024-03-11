@@ -1,5 +1,5 @@
 {
-  "checksum": "431ea2eedf62c7a41ef984bb038b7160",
+  "checksum": "0d038d5428fb623f6308e1fcf1f49dcb",
   "root": "cdf-olly-plots@link-dev:./package.json",
   "node": {
     "yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79@d41d8cd9": {
@@ -74,6 +74,7 @@
         "ocaml@5.1.1@d41d8cd9", "@opam/spices@opam:0.0.2@da136662",
         "@opam/runtime_events_tools@opam:0.5.1@d6695bd0",
         "@opam/minttea@opam:0.0.2@603b5426",
+        "@opam/leaves@opam:0.0.2@777768fe",
         "@opam/eio_main@opam:0.15@b6e1694d", "@opam/eio@opam:0.15@85062930"
       ],
       "devDependencies": [
@@ -3033,6 +3034,34 @@
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [ "ocaml@5.1.1@d41d8cd9" ]
+    },
+    "@opam/leaves@opam:0.0.2@777768fe": {
+      "id": "@opam/leaves@opam:0.0.2@777768fe",
+      "name": "@opam/leaves",
+      "version": "opam:0.0.2",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/sha256/d1/d1e07b3aec5c3ddbfd6dfd9a21011e8abe389907f1e56d80263ed56f8a46b4b2#sha256:d1e07b3aec5c3ddbfd6dfd9a21011e8abe389907f1e56d80263ed56f8a46b4b2",
+          "archive:https://github.com/leostera/minttea/releases/download/0.0.2/minttea-0.0.2.tbz#sha256:d1e07b3aec5c3ddbfd6dfd9a21011e8abe389907f1e56d80263ed56f8a46b4b2"
+        ],
+        "opam": {
+          "name": "leaves",
+          "version": "0.0.2",
+          "path": "esy.lock/opam/leaves.0.0.2"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@5.1.1@d41d8cd9", "@opam/spices@opam:0.0.2@da136662",
+        "@opam/minttea@opam:0.0.2@603b5426",
+        "@opam/dune@opam:3.14.0@bfa03801", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@5.1.1@d41d8cd9", "@opam/spices@opam:0.0.2@da136662",
+        "@opam/minttea@opam:0.0.2@603b5426",
+        "@opam/dune@opam:3.14.0@bfa03801"
+      ]
     },
     "@opam/jst-config@opam:v0.16.0@f110c9c9": {
       "id": "@opam/jst-config@opam:v0.16.0@f110c9c9",
