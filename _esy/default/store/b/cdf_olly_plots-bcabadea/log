@@ -1,0 +1,25 @@
+# /home/sk/.esy/3______________________________________________________________________/i/opam__s__dune-opam__c__3.14.0-df69e958/bin/dune build --verbose
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/sk/.cache/dune/db
+# Workspace root: /home/sk/cdf-olly-plots
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-bcabadea/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /home/sk/.esy/3______________________________________________________________________/i/ocaml-5.1.1-77f2dea3/bin/ocamlc.opt -config > /tmp/dune_2611c8_output
+# Actual targets:
+# - alias @@default
