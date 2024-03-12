@@ -1,0 +1,65 @@
+{
+  "idInfo": {
+    "packageId": "@opam/leaves@link:/home/sk/ocaml-retreat/minttea/leaves.opam",
+    "build": {
+      "name": "@opam/leaves",
+      "version": null,
+      "mode": "build",
+      "buildType": "in-source",
+      "buildCommands": {
+        "opamcommands": [
+          {
+            "args": [
+              {
+                "arg": "'dune'",
+                "argfilter": null
+              },
+              {
+                "arg": "'build'",
+                "argfilter": null
+              },
+              {
+                "arg": "'-p'",
+                "argfilter": null
+              },
+              {
+                "arg": "name",
+                "argfilter": null
+              },
+              {
+                "arg": "'-j'",
+                "argfilter": null
+              },
+              {
+                "arg": "jobs",
+                "argfilter": null
+              },
+              {
+                "arg": "'@install'",
+                "argfilter": null
+              }
+            ],
+            "commandfilter": null
+          }
+        ]
+      },
+      "installCommands": {"opamcommands": []},
+      "patches": [],
+      "substs": [],
+      "exportedEnv": {},
+      "buildEnv": {}
+    },
+    "platform": "linux",
+    "arch": "x86_64",
+    "sandboxEnv": {},
+    "dependencies": [
+      "esy_ocaml__s__substs-0.0.1-ed6217b4",
+      "ocaml-5.1.1000-b89fad9f",
+      "opam__s__dune-opam__c__3.14.0-4e27867e",
+      "opam__s__minttea-1db27346",
+      "opam__s__spices-2d387545"
+    ]
+  },
+  "timeSpent": 0.347042,
+  "sourceModTime": "1710161714.65572906"
+}

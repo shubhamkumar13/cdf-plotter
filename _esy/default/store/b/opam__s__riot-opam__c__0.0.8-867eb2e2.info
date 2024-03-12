@@ -1,0 +1,96 @@
+{
+  "idInfo": {
+    "packageId": "@opam/riot@opam:0.0.8@c18812fc",
+    "build": {
+      "name": "@opam/riot",
+      "version": "opam:0.0.8",
+      "mode": "build",
+      "buildType": "in-source",
+      "buildCommands": {
+        "opamcommands": [
+          {
+            "args": [
+              {
+                "arg": "'dune'",
+                "argfilter": null
+              },
+              {
+                "arg": "'subst'",
+                "argfilter": null
+              }
+            ],
+            "commandfilter": "dev"
+          },
+          {
+            "args": [
+              {
+                "arg": "'dune'",
+                "argfilter": null
+              },
+              {
+                "arg": "'build'",
+                "argfilter": null
+              },
+              {
+                "arg": "'-p'",
+                "argfilter": null
+              },
+              {
+                "arg": "name",
+                "argfilter": null
+              },
+              {
+                "arg": "'-j'",
+                "argfilter": null
+              },
+              {
+                "arg": "jobs",
+                "argfilter": null
+              },
+              {
+                "arg": "'@install'",
+                "argfilter": null
+              },
+              {
+                "arg": "'@runtest'",
+                "argfilter": "with-test"
+              },
+              {
+                "arg": "'@doc'",
+                "argfilter": "with-doc"
+              }
+            ],
+            "commandfilter": null
+          }
+        ]
+      },
+      "installCommands": {"opamcommands": []},
+      "patches": [],
+      "substs": [],
+      "exportedEnv": {},
+      "buildEnv": {}
+    },
+    "platform": "linux",
+    "arch": "x86_64",
+    "sandboxEnv": {},
+    "dependencies": [
+      "esy_ocaml__s__substs-0.0.1-ed6217b4",
+      "ocaml-5.1.1000-b89fad9f",
+      "opam__s__bytestring-opam__c__0.0.8-364f85fb",
+      "opam__s__config-opam__c__0.0.2-502daff6",
+      "opam__s__dune-opam__c__3.14.0-4e27867e",
+      "opam__s__gluon-opam__c__0.0.8-d5247b90",
+      "opam__s__mirage_crypto-opam__c__0.11.3-4fa9a113",
+      "opam__s__mirage_crypto_rng-opam__c__0.11.3-deec7569",
+      "opam__s__mtime-opam__c__2.0.0-077e8ec0",
+      "opam__s__ptime-opam__c__1.1.0-a44dec25",
+      "opam__s__randomconv-opam__c__0.1.3-f7d96865",
+      "opam__s__rio-opam__c__0.0.8-e1ce0907",
+      "opam__s__telemetry-opam__c__0.0.1-b5389f4d",
+      "opam__s__tls-opam__c__0.17.3-63086bbf",
+      "opam__s__uri-opam__c__4.4.0-55a164e0"
+    ]
+  },
+  "timeSpent": 1.22644,
+  "sourceModTime": null
+}

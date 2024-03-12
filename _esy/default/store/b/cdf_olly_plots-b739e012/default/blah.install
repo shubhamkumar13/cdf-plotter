@@ -1,0 +1,8 @@
+lib: [
+  "/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-b739e012/install/default/lib/blah/META"
+  "/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-b739e012/install/default/lib/blah/dune-package"
+  "/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-b739e012/install/default/lib/blah/opam"
+]
+bin: [
+  "/home/sk/cdf-olly-plots/_esy/default/store/b/cdf_olly_plots-b739e012/install/default/bin/main"
+]

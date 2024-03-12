@@ -1,0 +1,30 @@
+# esy-build-package: building: @opam/gluon@opam:0.0.8
+# esy-build-package: pwd: /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/b/opam__s__gluon-opam__c__0.0.8-d5247b90
+# esy-build-package: running: 'dune' 'build' '-p' 'gluon' '-j' '4' '@install'
+(cd _build/default/gluon/sys/unix && /usr/bin/gcc -O2 -fno-strict-aliasing -fwrapv -pthread -fPIC -D_FILE_OFFSET_BITS=64 -O2 -g -I /home/sk/.esy/3______________________________________________________________________/i/ocaml-5.1.1000-b89fad9f/lib/ocaml -I /home/sk/.esy/3______________________________________________________________________/i/ocaml-5.1.1000-b89fad9f/lib/ocaml/unix -I /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/i/opam__s__libc-opam__c__0.0.1-94ab15c8/lib/libc -I ../../common -I ../../events -o gluon_unix_epoll.o -c gluon_unix_epoll.c)
+gluon_unix_epoll.c: In function 'gluon_unix_epoll_wait':
+gluon_unix_epoll.c:52:38: warning: passing argument 1 of 'caml_alloc_array' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |       event_array = caml_alloc_array(epoll_event_to_record, event_ptrs);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~
+      |                                      |
+      |                                      value (*)(struct epoll_event *) {aka long int (*)(struct epoll_event *)}
+In file included from gluon_unix_epoll.c:3:
+/home/sk/.esy/3______________________________________________________________________/i/ocaml-5.1.1000-b89fad9f/lib/ocaml/caml/alloc.h:57:44: note: expected 'value (*)(const char *)' {aka 'long int (*)(const char *)'} but argument is of type 'value (*)(struct epoll_event *)' {aka 'long int (*)(struct epoll_event *)'}
+   57 | CAMLextern value caml_alloc_array (value (*funct) (char const *),
+      |                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gluon_unix_epoll.c:52:61: warning: passing argument 2 of 'caml_alloc_array' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |       event_array = caml_alloc_array(epoll_event_to_record, event_ptrs);
+      |                                                             ^~~~~~~~~~
+      |                                                             |
+      |                                                             struct epoll_event **
+In file included from gluon_unix_epoll.c:3:
+/home/sk/.esy/3______________________________________________________________________/i/ocaml-5.1.1000-b89fad9f/lib/ocaml/caml/alloc.h:58:57: note: expected 'const char * const*' but argument is of type 'struct epoll_event **'
+   58 |                                    char const * const * array);
+      |                                    ~~~~~~~~~~~~~~~~~~~~~^~~~~
+gluon_unix_epoll.c: In function 'gluon_unix_epoll_ctl':
+gluon_unix_epoll.c:72:20: warning: assignment to 'uint64_t' {aka 'long unsigned int'} from 'value *' {aka 'long int *'} makes integer from pointer without a cast [-Wint-conversion]
+   72 |     event.data.u64 = ocaml_value;
+      |                    ^
+# esy-build-package: installing using built-in installer
+# esy-build-package: rewriting prefix: /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/s/opam__s__gluon-opam__c__0.0.8-d5247b90 -> /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/i/opam__s__gluon-opam__c__0.0.8-d5247b90
+# esy-build-package: committing: /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/s/opam__s__gluon-opam__c__0.0.8-d5247b90 -> /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/i/opam__s__gluon-opam__c__0.0.8-d5247b90

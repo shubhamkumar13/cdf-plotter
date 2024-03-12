@@ -1,11 +1,12 @@
 {
     "dependencies": {
-        "ocaml": "5.1.1",
+        "ocaml": "5.1.x",
         "@opam/minttea": "*",
         "@opam/spices": "*",
         "@opam/leaves": "*",
         "@opam/eio": "*",
         "@opam/eio_main": "*",
+        "@opam/utop": "*",
         "@opam/runtime_events_tools": "0.5.1"
     },
     "devDependencies": {
@@ -13,5 +14,14 @@
         "@opam/ocamlformat": "*",
         "@opam/ocaml-lsp-server": "*",
         "@opam/dune": "*"
+    },
+    "resolutions": {
+        "@opam/minttea": "link:/home/sk/ocaml-retreat/minttea/minttea.opam",
+        "@opam/spices": "link:/home/sk/ocaml-retreat/minttea/spices.opam",
+        "@opam/leaves": "link:/home/sk/ocaml-retreat/minttea/leaves.opam"
+    },
+
+    "esy" : {
+	    "buildsInSource" : "_build"
     }
 }

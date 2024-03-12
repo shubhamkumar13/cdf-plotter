@@ -1,0 +1,6 @@
+# esy-build-package: building: @opam/bytestring@opam:0.0.8
+# esy-build-package: pwd: /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/b/opam__s__bytestring-opam__c__0.0.8-364f85fb
+# esy-build-package: running: 'dune' 'build' '-p' 'bytestring' '-j' '4' '@install'
+# esy-build-package: installing using built-in installer
+# esy-build-package: rewriting prefix: /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/s/opam__s__bytestring-opam__c__0.0.8-364f85fb -> /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/i/opam__s__bytestring-opam__c__0.0.8-364f85fb
+# esy-build-package: committing: /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/s/opam__s__bytestring-opam__c__0.0.8-364f85fb -> /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/i/opam__s__bytestring-opam__c__0.0.8-364f85fb

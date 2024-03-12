@@ -1,0 +1,4 @@
+(library
+ (package riot)
+ (name log)
+ (libraries ptime ptime.clock.os))

@@ -1,0 +1,3 @@
+(library
+ (public_name rio)
+ (libraries unix cstruct))

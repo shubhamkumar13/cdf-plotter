@@ -1,0 +1,4 @@
+(library
+ (package riot)
+ (name scheduler)
+ (libraries core util gluon rio time log runtime_events))
