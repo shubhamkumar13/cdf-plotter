@@ -1,9 +1,0 @@
-# esy-build-package: building: @opam/spices@link:/home/sk/ocaml-retreat/minttea/spices.opam
-# esy-build-package: pwd: /home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/store/b/opam__s__spices-f313ca6b
-# esy-build-package: running: 'dune' 'subst'
-File ".", line 1, characters 0-0:
-Error: There is no dune-project file in the current directory, please add one
-with a (name <name>) field in it.
-Hint: 'dune subst' must be executed from the root of the project.
-error: command failed: 'dune' 'subst' (exited with 1)
-esy-build-package: exiting with errors above...

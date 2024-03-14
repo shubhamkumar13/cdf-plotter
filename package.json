@@ -7,7 +7,10 @@
         "@opam/eio": "*",
         "@opam/eio_main": "*",
         "@opam/utop": "*",
-        "@opam/runtime_events_tools": "0.5.1"
+        "@opam/runtime_events_tools": "0.5.1",
+        "@opam/fmt": "*",
+        "@opam/uutf": "*",
+        "@opam/bos": "*"
     },
     "devDependencies": {
         "@opam/dot-merlin-reader": "*",

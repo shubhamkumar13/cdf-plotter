@@ -1,4 +1,0 @@
-(library
- (public_name spices)
- (name spices)
- (libraries tty colors))

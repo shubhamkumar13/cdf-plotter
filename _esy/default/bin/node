@@ -1,4 +1,0 @@
-#!/bin/sh
-export ESY__NODE_BIN_PATH='/home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/bin'
-exec '/home/sk/.nvm/versions/node/v20.11.1/bin/node' -r '/home/sk/ocaml-retreat/cdf-olly-plots/_esy/default/pnp.js' "$@"
-              

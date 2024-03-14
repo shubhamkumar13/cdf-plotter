@@ -1,7 +1,0 @@
-(mdx
- (libraries leaves))
-
-(library
- (public_name leaves)
- (name leaves)
- (libraries minttea spices ptime ptime.clock.os uuseg))

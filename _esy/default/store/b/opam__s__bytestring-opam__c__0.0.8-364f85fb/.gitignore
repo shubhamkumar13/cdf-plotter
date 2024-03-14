@@ -1,6 +1,0 @@
-*.install
-*.bin
-_build
-*.beam
-*.trace
-test/generated/*
