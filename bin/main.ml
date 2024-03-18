@@ -62,6 +62,19 @@ let bold fmt = Spices.(default |> bold true |> build) fmt
 let time fmt =
   Spices.(default |> italic true |> fg dark_gray |> max_width 22 |> build) fmt
 
+let run_command cmd =
+  let open Bos.OS.Cmd in
+  run_out cmd    (* Run the command and collect its output *)
+  |> to_string   (* Convert the output to a string *)
+  |> Rresult.R.get_ok (* Get the Ok value or raise an exception if it is an Error *)
+
+let data_tbl = 
+  let stats = Bos.Cmd.v @@ "esy olly gc-stats " ^ (Sys.getcwd ()) ^ "/_build/default/benchmarks/binarytrees.exe" in
+  run_command stats
+  |> String.split_on_char '\n'
+  |> List.to_seq
+  |> Seq.drop_while (fun str -> )
+
 let view model =
   (* should be a grid of x and y axis *)
   let rows = 
